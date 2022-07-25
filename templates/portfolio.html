@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive personal portfolio website design tutorail</title>
+    <!-- custom css file link  -->
+     <link rel="stylesheet" href="{{ url_for ('static', filename = 'portfolio.css')}}" media="screen">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+
+</head>
+<body>
+<div class="menu">
+    <div class="user">
+        <img src="{{ url_for ('static', filename = 'logo.gif')}}"  alt="q">
+        <h3 class="name">Vedant Shrikant Utpat</h3>
+        <p class="post">Machine Learning | Web Development | Material Science |</p>
+    </div>
+    <nav class="navbar">
+        <ul>
+             <li><a href="/">Home</a></li>
+                <li><a href="/a">About</a></li>
+                <li><a href="/edu">Education</a></li>
+                <li><a href="/portf">Projects</a></li>
+               <li><a href="/cont">Contact</a></li>
+        </ul>
+    </nav>
+
+
+</div>
+
+
+<div class="education">
+    
+    <div class="title">
+        <h2>Projects</h2>
+    </div>
+    <div class="section"><h3>AI & ML</h3></div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Machine Learning for Material Science</h3>
+            <p>Different Machine Learning Algotithms are used for prediction of mechanical properties of cast aluminum alloy.</p>
+            <a href="/alg"><button class="btnh">Open  </button></a>
+        </div>
+
+         <div class="box">
+
+
+            <h3>Optimization of Neural Network Parameters for Prediction of Ultimate Tensile Strength</h3>
+            <p> By using Taguchi Method,Neural Network Parameters are optimized for Prediction of Ultimate Tensile Strength </p>
+            <a href="#about"><button class="btnh">read more  </button></a>
+        </div>
+        <div class="box">
+
+
+            <h3>Study of the effect of distance matrix of K Nearest Neighbor in property prediction of cast aluminum alloy</h3>
+            <p>By using distance matrix of K Nearest Neighbor namely Euclidean, Manhattan and Chebyshev, the KNN models are developed and the effect of these distance matrix on prediction accuracy is studied.</p>
+            <a href="/prop_knn"><button class="btnh">Open</button></a>
+        </div>
+    
+
+    
+    </div>
+
+    <div class="section"><h3>Front End Development</h3></div>
+
+    <div class="box-container">
+
+        <div class="box">
+          
+           
+            <h3>Digital Cloack</h3>
+            <p></p>
+            <a href="#about"><button class="btnh">read more </button></a>
+        </div>
+    
+        <div class="box">
+            
+           
+            <h3>Simple Calculator</h3>
+            <p></p>
+            <a href="#about"><button class="btnh">read more </button></a>
+        </div>
+        <div class="box">
+           
+           
+            <h3>Simple login Page</h3>
+            <p></p>
+            <a href="#about"><button class="btnh">read more </button></a>
+        </div>
+
+    </div>
+
+    <div class="section"><h3>Others</h3></div>
+
+    <div class="box-container">
+
+        <div class="box">
+
+            <h3>Design of Hydraulic Pit buffer system</h3>
+            <p>This project is done as part of summer internship at CSIR's CMERI</p>
+            <a href="#about"><button class="btnh">read more </button></a>
+        </div>
+
+        <div class="box">
+
+            <h3>Analysis-Survey-of-OTT-Viewership-in-Lockdown</h3>
+            <p>The objective of this study is to propose a conceptual framework which attempts to analyse the factors of viewership during lockdown in India.</p>
+            <a href="#about"><button class="btnh">read more </button></a>
+        </div>
+    
+
+    </div>
+           
+
+    
+</div>
+
+    </div>
+
+    <div class="navmenu">
+    <a href="/">  <i class="material-symbols-outlined"> home</i></a>
+    <a href="/a">  <i class="material-symbols-outlined"> info</i></a>
+    <a href="/edu"> <i class="material-symbols-outlined"> school</i></a>
+    <a href="/portf">   <i class="material-symbols-outlined"> work</i></a>
+    <a href="/cont">   <i class="material-symbols-outlined"> contact_page</i></a>
+    </div>
+
+
+
+
+</body>

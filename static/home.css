@@ -1,0 +1,277 @@
+html {
+    font-size: 62.5%;
+    background-color: black;
+}
+* {
+    margin: 0%;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 3.5rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+
+.menu {
+    position: fixed;
+    top: 0%;
+    background-color: rgb(56, 75, 69);
+    height: 100%;
+    width: 20%;
+    left: 0%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.user {
+    margin: 0rem;
+   
+    padding: 0rem;
+   
+}
+
+.user img {
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid rgb(255, 152, 50);
+}
+
+.user .post a{
+    text-decoration: none;
+    color:#eee;
+
+}
+.navbar {
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 1rem 3rem;
+    text-decoration: none;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: rgb(255, 152, 50);
+}
+
+.home {
+    position: fixed;
+    left: 20%;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: 0%;
+    padding: 0 0rem;
+    background-color: rgb(0, 0, 0);
+    padding-top: 1%;
+    color: #fff;
+    text-align: center;
+}
+
+.home h2 span {
+    color: rgb(255, 152, 50);
+}
+.home p {
+line-height: 1.6;
+ padding-left: 3%;
+  padding-right: 3%;
+ text-align: justify;
+}
+.btnh {
+    margin-top: 10rem;
+    width: 10%;
+    height: 30%;
+    font-size: 1.7rem;
+    border-radius: 20rem;
+    border: none;
+}
+
+.btnh:hover {
+    background-color: rgb(255, 152, 50);
+    border: none;
+    color: #fff;
+    border-radius: 20rem;
+}
+
+
+
+/* media queries  */
+
+@media (max-width:1200px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .home {
+        padding: 1rem 4rem;
+    }
+.btnh {
+        width: 10rem;
+        height: 10rem;
+        justify-content: center;
+    }
+}
+
+@media (max-width:900px) {
+html{
+font-size: 52%
+}
+    .menu {
+        left: -120%;
+    }
+    .btnh {
+        width: 10rem;
+        height: 10rem;
+        justify-content: center;
+    }
+
+    .home {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 0%;
+        left: 0%;
+        width: auto;
+        background-color: rgb(0, 0, 0);
+       
+    }
+
+}
+
+@media (max-width:768px) {
+
+    html {
+        font-size: 50%;
+    }
+    .menu {
+        display: none;
+
+    }
+
+    .btnh {
+        width: 10rem;
+        height: 10rem;
+        justify-content: center;
+    }
+
+    .home {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 0%;
+        width: auto;
+       
+    }
+
+}
+@media (max-width:768px) {
+
+    html {
+        font-size: 45%;
+    }
+    .menu {
+        display: none;
+
+    }
+
+    .btnh {
+        width: 10rem;
+        height: 10rem;
+        justify-content: center;
+    }
+
+    .home {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 0%;
+        width: auto;
+
+    }
+
+}
+@media (max-width:480px) {
+    html {
+        font-size: 42%;
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+    .btnh {
+        width: 9rem;
+        height: 9rem;
+        justify-content: center;
+    }
+
+    .home {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 0%;
+        width: auto;
+       
+    }
+
+}
+@media (max-width:380px) {
+    html {
+        font-size: 37%;
+    }
+
+    .menu {
+        display: none;
+        background-color: #eee;
+        left: -120%;
+
+    }
+    .home {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        margin-left: 0rem;
+        background-color: rgb(0, 0, 0);
+        overflow: scroll;
+        height: 95%;
+    }
+
+
+    }
+}

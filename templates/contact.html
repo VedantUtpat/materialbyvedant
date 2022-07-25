@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive personal portfolio website design tutorail</title>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename = 'contact.css')}}" media="screen">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+</head>
+<body>
+<div class="menu">
+    <div class="user">
+        <img src="{{ url_for ('static', filename = 'logo.gif')}}"  alt="q">
+        <h3 class="name">Vedant Shrikant Utpat</h3>
+         <p class="post">Machine Learning | Web Development | Material Science |</p>
+    </div>
+    <nav class="navbar">
+        <ul>
+             <li><a href="/">Home</a></li>
+                <li><a href="/a">About</a></li>
+                <li><a href="/edu">Education</a></li>
+                <li><a href="/portf">Projects</a></li>
+               <li><a href="/cont">Contact</a></li>
+        </ul>
+    </nav>
+
+
+</div>
+
+
+<div class="education">
+    
+    <div class="title">
+        <h2>Contact Me</h2>
+    </div>
+
+    <div class="row">
+
+        <div class="content">
+    
+            <div class="info">
+                <h3> <i class="fas fa-envelope"></i> <a href="utpat.vedant@gmail.com">utpat.vedant@gmail.com</a></h3>
+                <h3> <i class="fas fa-phone"></i> +91 8788570276 </h3>
+                <h3> <i class="fas fa-link"></i> <a href="www.linkedin.com/in/vedantutpat">www.linkedin.com/in/vedantutpat</a> </h3>
+                <h3> <i class="fas fa-link"></i> <a href="https://github.com/VedantUtpat/vedantutpat ">github.com/VedantUtpat/vedantutpat </a></h3>
+                <h3> <i class="fas fa-map-marker-alt"></i> Pandharpur, india - 413304. </h3>
+               
+                
+            </div>
+    
+        </div>
+    
+        <form action="/cont" method = "POST">
+    
+            <input type="text" placeholder="Name" class="box" name = "Name">
+            <input type="email" placeholder="email" class="box" name = "Mail ID">
+            <input type="text" placeholder="contact" class="box" name = "Contact">
+            <input type="text" class="box message" placeholder="message" name = "Message"></input>
+            <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+    
+        </form>
+    
+    </div>
+    
+    
+
+
+</div>
+<div class="navmenu">
+   <a href="/">  <i class="material-symbols-outlined"> home</i></a>
+    <a href="/a">  <i class="material-symbols-outlined"> info</i></a>
+    <a href="/edu"> <i class="material-symbols-outlined"> school</i></a>
+    <a href="/portf">   <i class="material-symbols-outlined"> work</i></a>
+    <a href="/cont">   <i class="material-symbols-outlined"> contact_page</i></a>
+ </div>
+
+
+
+
+
+</body>

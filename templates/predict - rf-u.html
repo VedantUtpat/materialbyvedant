@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Intelligence</title>
+    <!-- custom css file link  -->
+   <link rel="stylesheet" href="{{ url_for ('static', filename = 'predict.css')}}" media="screen">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+</head>
+
+<body>
+    <div class="menu">
+        <div class="user">
+          <img src="{{ url_for ('static', filename = 'mi.png')}}"  alt="q">
+            <h3 class="name">Material Intelligence</h3>
+            <p class="post">Material Property Predictor</p> <br>
+            <p class="post">Created by <br> <a href="">Vedant Shrikant Utpat</a> </p>
+        </div>
+        <nav class="navbar">
+            <ul>
+               <li><a href="/">Home</a></li>
+                <li><a href="/a">About</a></li>
+                <li><a href="/edu">Education</a></li>
+                <li><a href="/portf">Projects</a></li>
+               <li><a href="/cont">Contact</a></li>
+            </ul>
+        </nav>
+
+
+    </div>
+
+
+    <div class="education">
+
+        <div class="title">
+            <h2>Property Prediction</h2>
+        </div>
+
+        <div class="box-container">
+            <form action="/rfu" method="post" class="f">
+                <div class="box box0">
+
+                    <span>Input Allys</span>
+                    <input type="float" name="Al" class="n n1" id="nn1" placeholder="Al">
+                    <input type="float" name="Cu" class="n n1" id="nn2" placeholder="Cu">
+                    <input type="float" name="Si" class="n n1" id="nn3" placeholder="Si">
+
+                    <input type="float" name="n4" class="n n1" id="nn4" placeholder="Fe">
+                    <input type="float" name="n5" class="n n1" id="nn5" placeholder="Mn">
+                    <input type="float" name="n6" class="n n1" id="nn6" placeholder="Zn">
+
+                    <input type="float" name="n7" class="n n1" id="nn7" placeholder="Ti">
+                    <input type="float" name="n8" class="n n1" id="nn8" placeholder="Mg">
+                    <input type="float" name="n9" class="n n1" id="nn9" placeholder="residuals">
+
+                </div>
+
+
+                <div class="box box2">
+                 <input type="submit" name="submit" value="Predict" class="m" id="nn19">
+                </div>
+
+            </form>
+
+        </div>
+
+
+
+        <div class="section">
+            <h3>Prediction</h3>
+        </div>
+
+        <div class="box-container">
+             <a href="/n"> <input type="button" name="Refresh" value="Refresh" class="m" id="nn190"> </i></a>
+
+            <div class="box box3">
+                <h34> {{title}} <br> {{U}} {{output_predU}} {{unit1}}  </h34>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="navmenu">
+        <a href="/">  <i class="material-symbols-outlined"> home</i></a>
+    <a href="/a">  <i class="material-symbols-outlined"> info</i></a>
+    <a href="/edu"> <i class="material-symbols-outlined"> school</i></a>
+    <a href="/portf">   <i class="material-symbols-outlined"> work</i></a>
+    <a href="/cont">   <i class="material-symbols-outlined"> contact_page</i></a>
+    </div>
+
+
+</body>

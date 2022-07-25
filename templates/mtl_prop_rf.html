@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Intelligence</title>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{{ url_for ('static', filename = 'algo.css')}}" media="screen">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+</head>
+
+<body>
+    <div class="menu">
+        <div class="user">
+           <img src="{{ url_for ('static', filename = 'mi.png')}}"  alt="q">
+            <h3 class="name">Material Intelligence</h3>
+            <p class="post">Material Property Predictor</p><br>
+            <p class="post">Created by <br> <br><a href="">Vedant Shrikant Utpat</a> </p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                 <li><a href="/">Home</a></li>
+                <li><a href="/a">About</a></li>
+                <li><a href="/edu">Education</a></li>
+                <li><a href="/portf">Projects</a></li>
+               <li><a href="/cont">Contact</a></li>
+            </ul>
+        </nav>
+
+
+    </div>
+
+
+    <div class="education">
+
+        <div class="title">
+            <h2>Random Forest</h2>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Ultimate Tensile Strength</h3>
+                <p>By using RF algorithm, Ultimate Tensile Strength of cast aluminum alloys are predicted</p>
+                <a href="/rfu"><button class="btnh">Open </button></a>
+            </div>
+
+            <div class="box">
+                <h3>Yield Strength</h3>
+                 <p>By using RF algorithm, Yield Strength of cast aluminum alloys are predicted</p>
+                <a href="/rfy"><button class="btnh">Open </button></a>
+            </div>
+            <div class="box">
+                <h3>Fatigue Strength</h3>
+               <p>By using RF algorithm, Fatigue Strength of cast aluminum alloys are predicted</p>
+                <a href="/rff"><button class="btnh">Open </button></a>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="navmenu">
+       <a href="/">  <i class="material-symbols-outlined"> home</i></a>
+    <a href="/a">  <i class="material-symbols-outlined"> info</i></a>
+    <a href="/edu"> <i class="material-symbols-outlined"> school</i></a>
+    <a href="/portf">   <i class="material-symbols-outlined"> work</i></a>
+    <a href="/cont">   <i class="material-symbols-outlined"> contact_page</i></a>
+    </div>
+
+
+
+
+
+</body>

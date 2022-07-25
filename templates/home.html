@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant Shrikant Utpat</title>
+    <!-- custom css file link  -->
+   <link rel="stylesheet" href="{{ url_for ('static', filename = 'home.css')}}" media="screen">
+
+</head>
+<body>
+<div class="menu">
+    <div class="user">
+        <img src="{{ url_for ('static', filename = 'logo.gif')}}"  alt="q">
+        <h3 class="name">Vedant Shrikant Utpat</h3>
+         <p class="post">Machine Learning | Web Development | Material Science |</p>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/edu">Education</a></li>
+            <li><a href="/portf">Projects</a></li>
+            <li><a href="/cont">Contact</a></li>
+        </ul>
+    </nav>
+
+
+</div>
+
+
+<div class="home">
+    <h3>HI THERE !</h3>
+    <h2>I'M <br><span>Vedant Shrikant Utpat</span></h2> <br>
+    <p>
+        I'm a Mechanical Design Engineer having good knowledge and hands on experience with machine learning, development and
+        other tools like taguchi analysis etc. I have done projects for my Mtech on Machine Learning so I have hands on experience
+with python, artificial neural network (ANN), support vector machine (SVM), k nearest
+neighbors (KNN), and some statistical tools like Taguchi and ANOVA. I used machine learning algorithms for predicting the mechanical properties by providing
+the alloying element data as input for algorithm. In the last year of my Mtech curriculum, I
+have applied my research papers for publication for some reputed journals having index
+like SCI, SCOPUS, Wanfang etc. and got acceptance from SCI Journal for publications.
+
+
+    </p>
+
+        <a href="/a"><button class="btnh">about me </button></a>
+        <a href="/portf"><button class="btnh">Projects </button></a>
+         <a href="/cont"><button class="btnh">Contact </button></a>
+
+
+</div>
+
+
+
+
+
+
+</body>
